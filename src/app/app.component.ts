@@ -8,25 +8,27 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'address-book';
   contact: any;
+  contacts: any[] = [];
 
   constructor() {
-
-    this.contact = {
-      name: ``,
-      email: ``,
-      company: ``,
-      role: ``,
-      twitter: ``,
-      location: ``,
-      notes: ``
-    }
-
+    this.initContact();
   }
 
   createNewContact() {
-    console.log('Someone clicked me!!!')
+    console.log(`Creating the following contact: ${JSON.stringify(this.contact)}`);
+    this.contacts.push(this.contact);
+    this.initContact();
   }
 
-
-
-}
+    private initContact() {
+      this.contact = {
+        name: ``,
+        email: ``,
+        company: ``,
+        role: ``,
+        twitter: ``,
+        location: ``,
+        notes: ``
+      }
+    }
+  }
