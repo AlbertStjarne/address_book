@@ -2,7 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { Input } from '@angular/core';
-import { ContactComponent } from './contact/contact.component';
+import { CardComponent } from './card/card.component';
 
 
 describe('AppComponent', () => {
@@ -10,7 +10,7 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent, ContactComponent
+        AppComponent, CardComponent
       ],
       imports: [
         FormsModule
