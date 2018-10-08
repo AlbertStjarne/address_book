@@ -54,7 +54,7 @@
         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-notes">
           Notes
         </label>
-        <textarea class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+        <textarea [(ngModel)]="contact.notes" class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
           id="grid-notes" type="password" name="notes" placeholder="Things to know about this contact"></textarea>
       </div>
     </div>
